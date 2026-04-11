@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IngeniaPro | Servicios de Ingeniería</title>
+    <meta name="description" content="IngeniaPro — Soluciones integrales de ingeniería, fabricación metalúrgica, montaje industrial y obra civil para proyectos de alto rendimiento.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚙️%3C/text%3E%3C/svg%3E">
+    <!-- Open Graph -->
+    <meta property="og:title" content="IngeniaPro | Servicios de Ingeniería Industrial">
+    <meta property="og:description" content="Soluciones integrales de fabricación, montaje industrial y obra civil. +15 años de experiencia.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════
+         PRELOADER
+    ═══════════════════════════════════════════ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <i class="fas fa-drafting-compass"></i>
+            </div>
+            <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         NAVEGACIÓN
+    ═══════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <i class="fas fa-drafting-compass"></i>
+                <span>Ingenia<strong>Pro</strong></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#fabricacion" class="nav-link">Fabricación Integral</a></li>
+                <li><a href="#noticias" class="nav-link">Noticias</a></li>
+                <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════
+         HERO / INICIO — Slider estilo Lasertec
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <!-- Imágenes de fondo por slide -->
+            <div class="hero-bg-slides">
+                <div class="hero-bg-img active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');"></div>
+                <div class="hero-bg-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80');"></div>
+                <div class="hero-bg-img" style="background-image: url('https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1920&q=80');"></div>
+            </div>
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-particles" id="particles"></div>
+            <!-- Líneas de grid animadas -->
+            <div class="hero-grid-lines">
+                <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+                <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+            </div>
+        </div>
+
+        <!-- Hero Slider -->
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" data-slide="0">
+                <div class="hero-content">
+                    <span class="hero-badge reveal-up">Ingeniería industrial y obra civil</span>
+                    <h1 class="hero-title reveal-up" style="animation-delay:.1s">
+                        Capacidad Operativa<br>y <span class="gradient-text typing-target">Experiencia en Campo</span>
+                    </h1>
+                    <p class="hero-subtitle reveal-up" style="animation-delay:.2s">
+                        Más de 15 años siendo aliados estratégicos de la industria, brindando soluciones integrales de fabricación, montaje y obra civil.
+                    </p>
+                    <div class="hero-buttons reveal-up" style="animation-delay:.3s">
+                        <a href="#servicios" class="btn btn-primary">
+                            <span>Descubrir Servicios</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contacto" class="btn btn-outline">
+                            <span>Solicitar Presupuesto</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="1">
+                <div class="hero-content">
+                    <span class="hero-badge reveal-up">Proveedor integral</span>
+                    <h1 class="hero-title reveal-up" style="animation-delay:.1s">
+                        Construcción y montaje<br>en un solo <span class="gradient-text">Proveedor</span>
+                    </h1>
+                    <p class="hero-subtitle reveal-up" style="animation-delay:.2s">
+                        La sinergia de ejecutar obra civil, estructuras metálicas y montaje industrial bajo un mismo equipo ofrece ventajas competitivas insuperables.
+                    </p>
+                    <div class="hero-buttons reveal-up" style="animation-delay:.3s">
+                        <a href="#fabricacion" class="btn btn-primary">
+                            <span>Ver Proceso</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#quienes-somos" class="btn btn-outline">
+                            <span>Conocer Más</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" data-slide="2">
+                <div class="hero-content">
+                    <span class="hero-badge reveal-up">Comprometidos con la seguridad</span>
+                    <h1 class="hero-title reveal-up" style="animation-delay:.1s">
+                        Seguridad y <span class="gradient-text">Excelencia</span><br>en cada obra
+                    </h1>
+                    <p class="hero-subtitle reveal-up" style="animation-delay:.2s">
+                        Certificados bajo normas ISO 9001, ASME y AWS. Garantizamos calidad, seguridad laboral y cumplimiento normativo en cada trabajo.
+                    </p>
+                    <div class="hero-buttons reveal-up" style="animation-delay:.3s">
+                        <a href="#contacto" class="btn btn-primary">
+                            <span>Contactanos</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#servicios" class="btn btn-outline">
+                            <span>Nuestros Servicios</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider controls -->
+        <div class="slider-controls">
+            <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="slider-progress"><div class="slider-progress-bar" id="sliderProgress"></div></div>
+
+        <a href="#quienes-somos" class="scroll-indicator" aria-label="Desplazar hacia abajo">
+            <div class="mouse"><div class="wheel"></div></div>
+        </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         NÚMEROS / STATS — Estilo Lasertec
+    ═══════════════════════════════════════════ -->
+    <section class="stats-banner" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon"><i class="fas fa-warehouse"></i></div>
+                    <div class="stat-data">
+                        <span class="stat-number" data-target="5000">0</span><span class="stat-suffix"> M²</span>
+                    </div>
+                    <span class="stat-label">Planta Industrial</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="stat-data">
+                        <span class="stat-number" data-target="18">0</span><span class="stat-suffix"> KW</span>
+                    </div>
+                    <span class="stat-label">Potencia Instalada</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-data">
+                        <span class="stat-number" data-target="1100">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label">Clientes Atendidos</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="stat-data">
+                        <span class="stat-number" data-target="350">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <span class="stat-label">Proyectos Anuales</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon"><i class="fas fa-weight-hanging"></i></div>
+                    <div class="stat-data">
+                        <span class="stat-number" data-target="1000">0</span><span class="stat-suffix"> TN</span>
+                    </div>
+                    <span class="stat-label">Toneladas Procesadas</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon"><i class="fas fa-star"></i></div>
+                    <div class="stat-data">
+                        <span class="stat-number" data-target="9">0</span><span class="stat-suffix">/10</span>
+                    </div>
+                    <span class="stat-label">Satisfacción de Clientes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         QUIÉNES SOMOS — Estilo Carmocal
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="quienes-somos">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Su aliado estratégico</span>
+                <h2 class="section-title">Un aliado de <span class="gradient-text">su empresa</span></h2>
+                <p class="section-desc">Somos el proveedor integral para tus proyectos. Más de una década liderando soluciones de ingeniería industrial, fabricación y obra civil con compromiso, calidad y mano de obra calificada.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll" data-reveal="left">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop" alt="Equipo de ingenieros en obra industrial" loading="lazy">
+                    </div>
+                    <h3>Ingeniería de campo que transforma proyectos en realidad</h3>
+                    <p>En <strong>IngeniaPro</strong> brindamos soluciones integrales de fabricación, montaje y obra civil para las siguientes industrias: Petrolera, Minera, Equipamiento Urbano, Energía, Agroindustria, Construcción y más.</p>
+                    <p>Nuestra vocación es asesorarte profesionalmente, con personal capacitado y equipamiento propio. Nos involucramos en cada etapa del proyecto: replanteo, ejecución de obra, montaje de estructuras e instalaciones industriales.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificación ISO 9001</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-hard-hat"></i>
+                            <span>Seguridad en Obra</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-people-carry-box"></i>
+                            <span>Mano de Obra Calificada</span>
+                        </div>
+                    </div>
+                    <a href="#servicios" class="btn btn-primary" style="margin-top:24px;">
+                        <span>Sobre Nosotros</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="values-cards animate-on-scroll" data-reveal="right">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-bullseye"></i></div>
+                        <h4>Misión</h4>
+                        <p>Ejecutar obras y proyectos industriales con excelencia, mano de obra calificada y compromiso con la seguridad, cumpliendo plazos y estándares de calidad.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-eye"></i></div>
+                        <h4>Visión</h4>
+                        <p>Ser reconocidos como la empresa líder en servicios de ingeniería y obra industrial a nivel regional, destacándonos por la calidad de ejecución, seguridad laboral y confiabilidad.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-gem"></i></div>
+                        <h4>Valores</h4>
+                        <p>Integridad, seguridad, compromiso, trabajo en equipo y responsabilidad son los pilares que guían cada obra y proyecto que ejecutamos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         VENTAJAS COMPETITIVAS — Estilo Lasertec
+    ═══════════════════════════════════════════ -->
+    <section class="advantages-section" id="ventajas">
+        <div class="advantages-bg"></div>
+        <div class="container">
+            <div class="advantages-content">
+                <div class="section-header animate-on-scroll" style="text-align:left; margin:0 0 40px;">
+                    <span class="section-tag">Ventajas</span>
+                    <h2 class="section-title" style="color:var(--white);">Fabricación integral en<br>un solo <span class="gradient-text">Proveedor</span></h2>
+                    <p class="section-desc" style="color:var(--gray-400);">Ejecutar toda la obra con un solo equipo integral trae innumerables ventajas para tu proyecto.</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-card animate-on-scroll">
+                        <div class="advantage-icon"><i class="fas fa-truck-fast"></i></div>
+                        <h4>Sin costos logísticos intermedios</h4>
+                        <p>Al integrar todos los oficios y procesos, eliminamos subcontrataciones y traslados innecesarios.</p>
+                    </div>
+                    <div class="advantage-card animate-on-scroll">
+                        <div class="advantage-icon"><i class="fas fa-clock"></i></div>
+                        <h4>Mejores plazos de entrega</h4>
+                        <p>Sin tiempos muertos entre gremios, optimizamos cada jornada de trabajo en obra.</p>
+                    </div>
+                    <div class="advantage-card animate-on-scroll">
+                        <div class="advantage-icon"><i class="fas fa-check-double"></i></div>
+                        <h4>Control total del producto</h4>
+                        <p>Supervisión completa desde la materia prima hasta el producto final entregado.</p>
+                    </div>
+                    <div class="advantage-card animate-on-scroll">
+                        <div class="advantage-icon"><i class="fas fa-headset"></i></div>
+                        <h4>Un solo interlocutor</h4>
+                        <p>Diálogo directo con un equipo que lo respalda en cada etapa del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICIOS — Cards con overlay estilo Infesa/Lasertec
+    ═══════════════════════════════════════════ -->
+    <section class="section section-dark" id="servicios">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Lo que hacemos</span>
+                <h2 class="section-title">Nuestros <span class="gradient-text">Servicios</span></h2>
+                <p class="section-desc">Ofrecemos una gama completa de servicios de ingeniería y obra diseñados para cubrir cada etapa de su proyecto en campo.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card-bg">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=250&fit=crop" alt="Cálculo estructural" loading="lazy" class="service-card-img">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h3>Ingeniería y Cálculo Estructural</h3>
+                        <p>Realizamos el cálculo, diseño y planos de estructuras metálicas, fundaciones y obras civiles para garantizar seguridad y eficiencia.</p>
+                        <a href="#contacto" class="service-link">
+                            Más información <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card-bg">
+                        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=250&fit=crop" alt="Fabricación y calderería" loading="lazy" class="service-card-img">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fas fa-industry"></i></div>
+                        <h3>Fabricación y Calderería</h3>
+                        <p>Fabricación de estructuras metálicas, tanques, cañerías, recipientes a presión y componentes industriales bajo normas internacionales.</p>
+                        <a href="#contacto" class="service-link">
+                            Más información <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card-bg">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=250&fit=crop" alt="Montaje industrial" loading="lazy" class="service-card-img">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+                        <h3>Montaje Industrial y Obra Civil</h3>
+                        <p>Ejecución de montaje de estructuras, cañerías, equipos y obra civil con personal propio, grúas e izaje especializado.</p>
+                        <a href="#contacto" class="service-link">
+                            Más información <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card-bg">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=250&fit=crop" alt="Mantenimiento industrial" loading="lazy" class="service-card-img">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fas fa-helmet-safety"></i></div>
+                        <h3>Mantenimiento Industrial</h3>
+                        <p>Paradas de planta, mantenimiento preventivo y correctivo de instalaciones industriales con cuadrillas especializadas.</p>
+                        <a href="#contacto" class="service-link">
+                            Más información <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card-bg">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400&h=250&fit=crop" alt="Soldadura especializada" loading="lazy" class="service-card-img">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fas fa-fire"></i></div>
+                        <h3>Soldadura Especializada</h3>
+                        <p>Soldadores certificados en procesos SMAW, GMAW, GTAW y SAW para trabajos en taller y en campo bajo las más exigentes normas.</p>
+                        <a href="#contacto" class="service-link">
+                            Más información <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card-bg">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=250&fit=crop" alt="Relevamiento y replanteo" loading="lazy" class="service-card-img">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon"><i class="fas fa-ruler-combined"></i></div>
+                        <h3>Relevamiento y Replanteo</h3>
+                        <p>Relevamiento en campo, replanteo de obra e ingeniería inversa para reemplazar piezas o adaptar instalaciones existentes.</p>
+                        <a href="#contacto" class="service-link">
+                            Más información <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         GALERÍA DE PROYECTOS
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="proyectos">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Nuestros Trabajos</span>
+                <h2 class="section-title">Galería de <span class="gradient-text">Proyectos</span></h2>
+                <p class="section-desc">Algunos de nuestros trabajos más representativos en fabricación, montaje y obra civil.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop" alt="Montaje de estructura metálica en planta industrial" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Montaje Industrial</span>
+                        <h4>Estructura metálica — Planta Petroquímica</h4>
+                        <p>Montaje de 120 TN de estructura metálica para ampliación de planta.</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=500&h=350&fit=crop" alt="Fabricación de tanque en taller" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Calderería</span>
+                        <h4>Tanques de almacenamiento</h4>
+                        <p>Fabricación de tanques API 650 para la industria petrolera.</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=500&h=350&fit=crop" alt="Proceso de soldadura en campo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Soldadura</span>
+                        <h4>Soldadura de cañerías en campo</h4>
+                        <p>Soldadura TIG/MIG en cañerías de alta presión bajo norma ASME B31.3.</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=350&fit=crop" alt="Equipo de trabajo en obra" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Obra Civil</span>
+                        <h4>Fundaciones y obra civil industrial</h4>
+                        <p>Ejecución de bases de hormigón para equipos rotativos.</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-large animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=500&fit=crop" alt="Vista aérea de construcción industrial" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Proyecto Integral</span>
+                        <h4>Construcción de nave industrial completa</h4>
+                        <p>Ingeniería, fabricación y montaje de nave de 2.500 m² para planta agroindustrial.</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1587038786473-1d14f6c05c4b?w=500&h=350&fit=crop" alt="Grúa montando estructura" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Izaje</span>
+                        <h4>Montaje con grúa de 80 TN</h4>
+                        <p>Izaje y posición de columnas metálicas de 15 metros de altura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA PARALLAX BANNER
+    ═══════════════════════════════════════════ -->
+    <section class="cta-parallax">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>¿Tiene una obra o proyecto en mente?</h2>
+                <p>Asesoramiento profesional con presencia en campo. Nos involucramos desde el replanteo hasta la entrega final.</p>
+                <a href="#contacto" class="btn btn-primary btn-lg">
+                    <span>Solicitar Asesoramiento</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         NOSOTROS / EQUIPO
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="nosotros">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Nuestro Equipo</span>
+                <h2 class="section-title">Los profesionales detrás de <span class="gradient-text">IngeniaPro</span></h2>
+                <p class="section-desc">Un equipo multidisciplinario con experiencia en campo, taller y gestión de obras industriales.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <h4>Ing. Martín Rodríguez</h4>
+                    <span class="team-role">Director General</span>
+                    <p>+20 años de experiencia en dirección de obras industriales, montaje y construcciones de gran envergadura.</p>
+                </div>
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <h4>Ing. Laura Fernández</h4>
+                    <span class="team-role">Jefa de Ingeniería</span>
+                    <p>Especialista en cálculo estructural, diseño mecánico y supervisión de obra con certificaciones internacionales.</p>
+                </div>
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <h4>Ing. Carlos Méndez</h4>
+                    <span class="team-role">Jefe de Taller y Producción</span>
+                    <p>Experto en procesos de fabricación, soldadura, calderería y control de calidad en taller.</p>
+                </div>
+                <div class="team-card animate-on-scroll">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <h4>Tec. Sofía Herrera</h4>
+                    <span class="team-role">Coordinadora de Obra</span>
+                    <p>Gestión integral de obra desde el replanteo hasta la entrega final, coordinando cuadrillas y logística.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FABRICACIÓN INTEGRAL — Estilo Lasertec mejorado
+    ═══════════════════════════════════════════ -->
+    <section class="section section-dark" id="fabricacion">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Proceso Completo</span>
+                <h2 class="section-title">Fabricación <span class="gradient-text">Integral</span></h2>
+                <p class="section-desc">Brindamos soluciones integrales de fabricación, montaje y obra civil para estructuras metálicas, cañerías e instalaciones industriales en una gran diversidad de industrias.</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-line" id="processLine"></div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Relevamiento y Proyecto</h3>
+                        <p>Visita a campo, relevamiento de instalaciones, análisis de requerimientos y definición del alcance de obra junto al cliente.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-drafting-compass"></i></div>
+                        <h3>Ingeniería y Planos de Taller</h3>
+                        <p>Desarrollo de planos de fabricación, cálculos estructurales, lista de materiales y documentación técnica de obra.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-cut"></i></div>
+                        <h3>Corte y Preparación</h3>
+                        <p>Corte CNC, plegado, rolado y preparación de materiales con tecnología de precisión.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-fire"></i></div>
+                        <h3>Soldadura y Ensamble</h3>
+                        <p>Procesos de soldadura certificados (SMAW, GMAW, GTAW, SAW) y ensamble controlado bajo normas.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-search"></i></div>
+                        <h3>Control de Calidad</h3>
+                        <p>Inspección dimensional, ensayos no destructivos (RT, UT, MT, PT), pruebas hidrostáticas y certificación.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-truck"></i></div>
+                        <h3>Montaje en Campo y Entrega</h3>
+                        <p>Transporte, montaje con grúas e izaje, obra civil complementaria, puesta en marcha y seguimiento post-obra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fabrication-highlights animate-on-scroll">
+                <div class="highlight-card">
+                        <i class="fas fa-cut"></i>
+                    <h4>Corte y Plegado CNC</h4>
+                    <p>Máquinas de corte plasma, oxicorte y plegadora CNC para preparación de materiales con precisión.</p>
+                </div>
+                <div class="highlight-card">
+                        <i class="fas fa-search"></i>
+                    <h4>Control de Calidad</h4>
+                    <p>Ensayos no destructivos, inspección dimensional y control de soldaduras en taller y en campo.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-warehouse"></i>
+                    <h4>Planta de 5.000 m²</h4>
+                    <p>Capacidad para fabricar piezas de gran porte y volumen.</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-award"></i>
+                    <h4>Certificaciones</h4>
+                    <p>ASME, AWS, ISO 9001 y estándares internacionales de calidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         INNOVACIÓN TECNOLÓGICA — Sección visual
+    ═══════════════════════════════════════════ -->
+    <section class="innovation-section">
+        <div class="innovation-bg"></div>
+        <div class="container">
+            <div class="innovation-grid">
+                <div class="innovation-text animate-on-scroll" data-reveal="left">
+                    <span class="section-tag">Nuestro equipamiento</span>
+                    <h2 class="section-title" style="color: var(--white);">Equipamiento y <span class="gradient-text">Capacidad Operativa</span></h2>
+                    <p>Contamos con equipamiento propio, herramientas especializadas y personal capacitado para ejecutar trabajos de alta exigencia en taller y en campo.</p>
+                    <ul class="innovation-list">
+                        <li><i class="fas fa-check-circle"></i> Grúas, hidrogrúas y equipos de izaje propios</li>
+                        <li><i class="fas fa-check-circle"></i> Corte y plegado CNC de última generación</li>
+                        <li><i class="fas fa-check-circle"></i> Equipos de soldadura multiproceso</li>
+                        <li><i class="fas fa-check-circle"></i> Andamios y plataformas de trabajo en altura</li>
+                        <li><i class="fas fa-check-circle"></i> Mecanizado y ajuste de piezas en campo</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary" style="margin-top:20px;">
+                        <span>Consultar</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="innovation-visual animate-on-scroll" data-reveal="right">
+                    <div class="innovation-image-grid">
+                        <div class="inno-img-card">
+                            <img src="https://images.unsplash.com/photo-1587038786473-1d14f6c05c4b?w=400&h=280&fit=crop" alt="Grúa en operación de montaje" loading="lazy">
+                            <span>Grúas e Izaje</span>
+                        </div>
+                        <div class="inno-img-card">
+                            <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400&h=280&fit=crop" alt="Soldadura en campo" loading="lazy">
+                            <span>Soldadura en Campo</span>
+                        </div>
+                        <div class="inno-img-card">
+                            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=280&fit=crop" alt="Taller de fabricación" loading="lazy">
+                            <span>Taller Equipado</span>
+                        </div>
+                        <div class="inno-img-card">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=280&fit=crop" alt="Mecanizado CNC" loading="lazy">
+                            <span>Mecanizado CNC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         NOTICIAS — Estilo blog mejorado
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="noticias">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Últimas novedades</span>
+                <h2 class="section-title"><span class="gradient-text">Noticias</span> y Actualidad</h2>
+                <p class="section-desc">Mantente al día con nuestros proyectos, logros y novedades del sector.</p>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card news-featured animate-on-scroll">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop" alt="Montaje planta petroquímica" loading="lazy" class="news-img">
+                        <span class="news-category">Proyecto Destacado</span>
+                    </div>
+                    <div class="news-body">
+                        <time class="news-date"><i class="far fa-calendar-alt"></i> 28 de Marzo, 2026</time>
+                        <h3>IngeniaPro finaliza el montaje de estructuras para nueva planta petroquímica</h3>
+                        <p>Se completó con éxito el montaje de estructuras metálicas y cañerías del proyecto de expansión de la planta petroquímica regional, cumpliendo plazos y normas de seguridad.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card animate-on-scroll">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=300&fit=crop" alt="Certificación ISO" loading="lazy" class="news-img">
+                        <span class="news-category">Certificación</span>
+                    </div>
+                    <div class="news-body">
+                        <time class="news-date"><i class="far fa-calendar-alt"></i> 15 de Marzo, 2026</time>
+                        <h3>Renovación exitosa de certificación ISO 9001:2015</h3>
+                        <p>Nuestra empresa renovó con éxito la certificación de gestión de calidad, reafirmando el compromiso con la mejora continua.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card animate-on-scroll">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1587038786473-1d14f6c05c4b?w=500&h=300&fit=crop" alt="Grúa telescópica" loading="lazy" class="news-img">
+                        <span class="news-category">Equipamiento</span>
+                    </div>
+                    <div class="news-body">
+                        <time class="news-date"><i class="far fa-calendar-alt"></i> 2 de Marzo, 2026</time>
+                        <h3>Nueva grúa de 50 toneladas incorporada a nuestra flota</h3>
+                        <p>Ampliamos nuestra capacidad de izaje con la incorporación de una grúa telescópica de 50 TN para montajes de mayor envergadura.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card animate-on-scroll">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=500&h=300&fit=crop" alt="Parada de planta" loading="lazy" class="news-img">
+                        <span class="news-category">Mantenimiento</span>
+                    </div>
+                    <div class="news-body">
+                        <time class="news-date"><i class="far fa-calendar-alt"></i> 18 de Febrero, 2026</time>
+                        <h3>Parada de planta exitosa en refinería del sur</h3>
+                        <p>IngeniaPro ejecutó con éxito la parada de planta programada, realizando reparaciones en cañerías, recipientes y estructuras de soporte.</p>
+                        <a href="#" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CERTIFICACIONES — Estilo Carmocal
+    ═══════════════════════════════════════════ -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="certifications-content animate-on-scroll">
+                <h3>Certificaciones y Normas de Calidad</h3>
+                <div class="cert-badges">
+                    <div class="cert-badge">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <strong>ISO 9001:2015</strong>
+                            <span>Gestión de Calidad</span>
+                        </div>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <div>
+                            <strong>ASME</strong>
+                            <span>Recipientes a Presión</span>
+                        </div>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-fire"></i>
+                        <div>
+                            <strong>AWS</strong>
+                            <span>Procesos de Soldadura</span>
+                        </div>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <strong>ISO 14001</strong>
+                            <span>Gestión Ambiental</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         NEWSLETTER — Estilo Lasertec
+    ═══════════════════════════════════════════ -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content animate-on-scroll">
+                <div class="newsletter-text">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <div>
+                        <h3>Suscríbase a nuestro Newsletter</h3>
+                        <p>Reciba novedades, artículos técnicos y ofertas exclusivas directamente en su email.</p>
+                    </div>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Ingrese su email" required>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Suscribirme</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACTO
+    ═══════════════════════════════════════════ -->
+    <section class="section section-dark" id="contacto">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Hablemos</span>
+                <h2 class="section-title">Envianos tu <span class="gradient-text">Mensaje</span></h2>
+                <p class="section-desc">Asesoramiento en sus obras y proyectos industriales. ¿Tiene un trabajo en mente? Estamos listos para presupuestarlo.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll" data-reveal="left">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. Industrial 2450, Parque Industrial<br>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+54 (11) 4567-8900<br>+54 (11) 4567-8901</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@ingeniapro.com<br>proyectos@ingeniapro.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/5491145678900?text=Hola%20IngeniaPro%2C%20me%20gustar%C3%ADa%20consultar%20por%20sus%20servicios." target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight: 600;">+54 9 11 4567-8900</a><br>Respuesta inmediata</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lunes a Viernes: 8:00 – 17:00<br>Sábados: 8:00 – 12:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-on-scroll" data-reveal="right" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" placeholder="Su nombre" required>
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+54 11 1234-5678">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="¿En qué podemos ayudarlo?" required>
+                        <span class="form-error" id="subjectError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Describa su proyecto o consulta..." required></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <p>¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.</p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Mapa embebido -->
+            <div class="map-container animate-on-scroll">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889523!2d-58.38375908477038!3d-34.60373888045951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb0e6e15e3%3A0x1c5e4e1e4c0e8e0!2sBuenos+Aires!5e0!3m2!1ses!2sar!4v1680000000000!5m2!1ses!2sar"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de IngeniaPro">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="nav-logo">
+                        <i class="fas fa-drafting-compass"></i>
+                        <span>Ingenia<strong>Pro</strong></span>
+                    </a>
+                    <p>Soluciones integrales de ingeniería, fabricación, montaje industrial y obra civil para proyectos que transforman industrias.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#fabricacion">Fabricación Integral</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Cálculo Estructural</a></li>
+                        <li><a href="#servicios">Fabricación y Calderería</a></li>
+                        <li><a href="#servicios">Montaje Industrial</a></li>
+                        <li><a href="#servicios">Mantenimiento Industrial</a></li>
+                        <li><a href="#servicios">Soldadura Especializada</a></li>
+                        <li><a href="#servicios">Relevamiento y Replanteo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="#contacto"><i class="fas fa-map-marker-alt"></i> Av. Industrial 2450, Bs.As.</a></li>
+                        <li><a href="tel:+541145678900"><i class="fas fa-phone-alt"></i> +54 (11) 4567-8900</a></li>
+                        <li><a href="mailto:info@ingeniapro.com"><i class="fas fa-envelope"></i> info@ingeniapro.com</a></li>
+                    </ul>
+                    <div class="footer-cert">
+                        <div class="cert-mini"><i class="fas fa-award"></i> ISO 9001</div>
+                        <div class="cert-mini"><i class="fas fa-shield-halved"></i> ASME</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IngeniaPro. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Botón WhatsApp flotante — Estilo sitios AR -->
+    <a href="https://wa.me/5491145678900?text=Hola%20IngeniaPro%2C%20me%20gustar%C3%ADa%20consultar%20por%20sus%20servicios%20de%20ingenier%C3%ADa." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¡Escribinos por WhatsApp!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
