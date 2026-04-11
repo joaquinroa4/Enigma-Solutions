@@ -37,27 +37,54 @@
     ═══════════════════════════════════════════ -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#inicio" class="nav-logo">
-                <i class="fas fa-drafting-compass"></i>
-                <span>Ingenia<strong>Pro</strong></span>
-            </a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
-                <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                <li><a href="#fabricacion" class="nav-link">Fabricación Integral</a></li>
-                <li><a href="#noticias" class="nav-link">Noticias</a></li>
-                <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+            <!-- Hamburguesa izquierda para menú secundario -->
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Abrir menú de secciones">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
+
+            <a href="#inicio" class="nav-logo">
+                <i class="fas fa-drafting-compass"></i>
+                <span>Ingenia<strong>Pro</strong></span>
+            </a>
+
+            <!-- Nav principal: solo 3 enlaces -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#quienes-somos" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+            </ul>
         </div>
     </nav>
+
+    <!-- Sidebar izquierdo con el resto de enlaces -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Secciones</span>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar menú">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="#proyectos" class="sidebar-link"><i class="fas fa-images"></i><span>Proyectos</span></a></li>
+            <li><a href="#nosotros" class="sidebar-link"><i class="fas fa-users"></i><span>Equipo</span></a></li>
+            <li><a href="#fabricacion" class="sidebar-link"><i class="fas fa-cogs"></i><span>Fabricación Integral</span></a></li>
+            <li><a href="#noticias" class="sidebar-link"><i class="fas fa-newspaper"></i><span>Noticias</span></a></li>
+            <li><a href="#contacto" class="sidebar-link sidebar-link-cta"><i class="fas fa-envelope"></i><span>Contacto</span></a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="sidebar-socials">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <a href="https://wa.me/5491145678900?text=Hola%20IngeniaPro%2C%20me%20gustar%C3%ADa%20consultar%20por%20sus%20servicios." class="sidebar-whatsapp" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <!-- ═══════════════════════════════════════════
          HERO / INICIO — Slider estilo Lasertec

@@ -6,8 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ─── Referencias del DOM ───────────────────
     const navbar = document.getElementById('navbar');
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarClose = document.getElementById('sidebarClose');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
     const navLinks = document.querySelectorAll('.nav-link');
     const backToTop = document.getElementById('backToTop');
     const contactForm = document.getElementById('contactForm');
@@ -24,30 +27,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ─── Menú Hamburguesa ──────────────────────
-    if (hamburger) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            document.body.classList.toggle('menu-open');
+    // ─── Sidebar Izquierdo ─────────────────────
+    function openSidebar() {
+        sidebar.classList.add('active');
+        sidebarOverlay.classList.add('active');
+        sidebarToggle.classList.add('active');
+        document.body.classList.add('sidebar-open');
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+        sidebarToggle.classList.remove('active');
+        document.body.classList.remove('sidebar-open');
+    }
+
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', () => {
+            if (sidebar.classList.contains('active')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
         });
     }
 
-    // Cerrar menú al hacer clic en un enlace
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        });
+    if (sidebarClose) {
+        sidebarClose.addEventListener('click', closeSidebar);
+    }
+
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', closeSidebar);
+    }
+
+    // Cerrar sidebar al hacer clic en un enlace
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', closeSidebar);
     });
 
-    // Cerrar menú al hacer clic fuera (backdrop)
-    document.addEventListener('click', (e) => {
-        if (navMenu && hamburger && !navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.classList.remove('menu-open');
+    // Cerrar sidebar con tecla Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+            closeSidebar();
         }
     });
 
@@ -117,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ─── Enlace Activo según Scroll ────────────
     const sections = document.querySelectorAll('section[id]');
+    const allNavItems = [...navLinks, ...sidebarLinks];
 
     function updateActiveLink() {
         const scrollPos = window.scrollY + 120;
@@ -127,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = section.getAttribute('id');
 
             if (scrollPos >= top && scrollPos < top + height) {
-                navLinks.forEach(link => {
+                allNavItems.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href') === `#${id}`) {
                         link.classList.add('active');
