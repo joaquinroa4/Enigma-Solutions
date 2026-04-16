@@ -951,7 +951,7 @@ body.sidebar-open {
 }
 
 .stat-icon {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--accent);
     margin-bottom: 12px;
 }
@@ -1388,8 +1388,8 @@ body.sidebar-open {
     padding: 100px 0;
     overflow: hidden;
     background:
-        linear-gradient(135deg, rgba(26, 86, 219, 0.9), rgba(6, 182, 212, 0.85)),
-        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=75') center/cover no-repeat;
+        linear-gradient(135deg, rgba(26, 86, 219, 0.9), rgba(10, 13, 231, 0.85)),
+        url('') center/cover no-repeat;
     background-attachment: fixed;
 }
 
